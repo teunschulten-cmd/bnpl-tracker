@@ -6,8 +6,8 @@ A BNPL purchase is paid in a fixed number of instalments, the first one on a
 given date and the next ones a fixed number of days apart. This module turns a
 purchase into its instalments: the amount of each one, in whole cents, and its
 due date. The number of instalments and the days between them come from the
-provider's rules (`providers`); storing purchases in the database belongs to
-the shared data model (`models`, `db`).
+provider's rules (`providers`). This package also stores purchases in the
+shared database and exposes them at /api/purchases/.
 """
 
 from dataclasses import dataclass
